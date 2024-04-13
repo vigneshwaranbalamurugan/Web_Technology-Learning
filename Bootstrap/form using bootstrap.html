@@ -1,0 +1,177 @@
+<html>  
+<head>
+  <title>ADMISSION FORM</title>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+  body{background-color:skyblue;}
+  </style>
+</head>
+<body bgcolor="skyblue">
+<h1 "font-size:30px"><u><center>FORM </center></u></h1>
+<div class="container border mt-3">
+ <form action="submit.html" class="was-validated">
+ 
+ <h2>PERSONAL DETAILS</h2>
+
+
+	<table cellpadding="2" cellspacing="2">
+	<tr><div class="input-group">
+	<td><label><b>NAME</b></label></td>
+   <td><input type="text" name="name" class="form-control form-control-sm" size="15" maxlength="35" placeholder="Enter name" autofocus required>  <div class="valid-feedback">Valid.</div>
+   <div class="invalid-feedback">Please fill out this field.</div></td>
+	</div></tr>
+   <tr>
+	<td><b>AGE</b></td>
+	<td><input type="number" name="age" class="form-control form-control-sm" min="3" max="10" step="1" autofocus required><div class="valid-feedback">Valid.</div>
+   <div class="invalid-feedback">Please fill out this field.</div></td>
+	</tr>
+	<br>
+	<tr>
+	<td><label><b>GENDER</b></label></td>
+	<td><input type="radio" id="Male" name="gender" value="m" required >
+   <label>Male</label>
+	<input type="radio" id="Female" name="gender" value="f" required>
+	<label>Female</label></td>
+	</tr>
+	<tr>
+	<td><b>D.O.B</b></td><td><input type="date" class="form-control form-control-sm" name="dob"></td>
+	</tr>
+	<tr>
+   <td><label><b>MOB NO</b></label></td>
+	<td><input type="number" name="mobile no" placeholder="Enter mobile number" class="form-control form-control-sm" maxlength="10"     step="1"  autofocus required><div class="valid-feedback">Valid.</div>
+   <div class="invalid-feedback">Please fill out this field.</div></td>
+   </tr>
+   <tr>
+	<td><label><b>E-MAIL</b></label></td>
+	<td><input type="email" size="15" name="e-mail" class="form-control form-control-sm" required><div class="valid-feedback">Valid.</div>
+   <div class="invalid-feedback">Please fill out this field.</div></td>
+	</tr>
+	<tr>
+	<td><label><b>PASSWORD</b></label></td>
+	<td><div class="input-group"><input type="password" id="password" name="pass" maxlength="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="form-control form-control-sm" placeholder="Enter password" size="15" required ><span class="bg-info">&nbsp;<input type="checkbox" class="form-label " onclick="functio()">&nbsp;<label class="form-label">Show Password&nbsp;&nbsp;</label></span></div><div class="valid-feedback" >Valid.</div>
+   <div class="invalid-feedback">Please fill out this field.</div></td>
+   <td><b>Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters</b></td>
+	</tr>
+	<script>
+function functio() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+</script>
+   <tr>
+   <td><label><b>COLLEGE NAME</b></label></td>
+	<td><input type="text" name="college" maxlength="1000" placeholder="Enter college name" class="form-control form-control-sm" size="15" required><div class="valid-feedback">Valid.</div>
+   <div class="invalid-feedback">Please fill out this field.</div></td>
+	</tr>
+	<tr>
+   <td><Label><b>PROGRAMME</b></label></td>
+	<td><input type="radio"id="BE" name="prog" value="BE">
+   <label>B.E</label>
+	<input type="radio"id="ME" name="prog" value="BE">
+   <label>M.E</label>
+   </tr>
+   <tr>
+   <td><Label><b>MODE OF ADMISSION</b></label></td>
+	<td><input type="radio"id="COUNSELLING" class="form-control form-control-sm" name="mode" value="counselling">
+   <label>Counselling</label>
+	<input type="radio"id="management" class="form-control form-control-sm" name="mode" value="counselling">
+   <label>Management</label></td>
+   </tr>
+   
+   <tr>
+   <td><label><b>CUT OFF</b></label></td>
+	<td><input type="number" name="cutoff" class="form-control form-control-sm" placeholder="Cutoff"  maxlength="10"     step="1"  autofocus required><div class="valid-feedback">Valid.</div>
+   <div class="invalid-feedback">Please fill out this field.</div></td>
+   </tr>
+   <tr>
+   <td><label><b>PHYSICS</b></label></td>
+	<td><input type="number" name="phy" class="form-control form-control-sm" placeholder="Enter Your Physics Mark"  maxlength="10"     step="1"  autofocus required><div class="valid-feedback">Valid.</div>
+   <div class="invalid-feedback">Please fill out this field.</div></td>
+   </tr>
+   <tr>
+   <td><label><b>MATHS</b></label></td>
+	<td><input type="number" name="mat" class="form-control form-control-sm" placeholder="Enter Your Maths Mark"  maxlength="10"     step="1"  autofocus required><div class="valid-feedback">Valid.</div>
+   <div class="invalid-feedback">Please fill out this field.</div></td>
+   </tr>
+   <tr>
+   <td><label><b>CHEMISTRY</b></label></td>
+	<td><input type="number" name="chem" class="form-control form-control-sm" placeholder="Enter Your Chemistry Mark"  maxlength="10"     step="1"  autofocus required><div class="valid-feedback">Valid.</div>
+   <div class="invalid-feedback">Please fill out this field.</div></td>
+   </tr>
+	<tr>
+	<td><label><b>DEPARTMENT</b></label></td>
+ 	<td><select>
+    	<option>COMPUTER SCIENCE AND ENGINEERING</option>
+		<option>INFORMTION TECHNOLOGY</option>
+		<option>ELECTRONICS AND COMMUNICATION ENGINEERING</option>
+		<option>ELECTRICAL AND ELECTRONICS ENGIBNEERING</option>
+		<Option>MECHANICAL ENGINEERING</option>
+		<Option>CHEMICAL ENGINEERING</option>
+		<option>ELECTRICAL AND INSTRUMENTATION ENGINEERING</option>
+      <option>MECHATRONIC</option>
+		<option>BIO MEDICAL ENGINEERING</option>
+		<option>BIO TECHNOLOGY</option>
+		<option selected>ARTIFICIAL INTELLIGENCE AND DATA SCIENCE</option>
+		<option>ARTIFICIAL INTELLIGENCE AND MACHINE LEARING</option>
+	</select></td>
+	</tr>
+
+		
+	<tr>
+	<td><label><b>ADDRESS</b></label><br><br></td>
+	<td><textarea rows="10" cols="20" name="add" class="form-control form-control-sm" tabindex="3" required></textarea><div class="valid-feedback">Valid.</div>
+   <div class="invalid-feedback">Please fill out this field.</div></td>
+	</tr>
+	<tr>
+   <td><b>REASON</b></td><td><textarea rows="10" cols="20" name="reason" class="form-control form-control-sm" tabindex="3" required></textarea><div class="valid-feedback">Valid.</div>
+   <div class="invalid-feedback">Please fill out this field.</div></td>
+	</tr>
+	<tr>
+	<td><b>UPLOAD</b></td><td><input type="file" class="form-control form-control-sm" name="upload" multiple ></td>
+	</tr>
+	<tr>
+   <td><Label><b>HOSTEL OR DS</b></label></td>
+	<td><input type="radio"id="hosteller" name="mode" value="hosteller">
+   <label>Hosteller</label>
+	<input type="radio"id="DAYSCHOLLOR" name="mode" value="dayscholr">
+   <label>Dayscholler</label></td>
+   </tr>
+	</table>
+	<br><br><br>
+   </fieldset><br><br>
+</form>
+	<fieldset>
+	<legend><h2>ADMISSION DETAILS</h2></legend>
+	<table>
+	<tr>
+	<td>MONTH</td><td><input type="month" class="form-control form-control-md" name="month"></td>
+	</tr>
+	<pre></pre>
+	<tr>
+	<td>TIME</td><td><input type="time" class="form-control form-control-sm" name="time"></td>
+	</tr>
+	<tr>
+	<td>DATE TIME</td><td><input type="date time-local" class="form-control form-control-sm"name="timelocal"></td>
+	</tr>
+	<tr>
+	<td>WEEK</td><td><input type="week"  class="form-control form-control-sm" name="week"></td>
+	</tr>
+	</table>
+	</fieldset>
+	<br><br>
+   <center><button><a href="C:\New folder\submit.html"><input type="submit"></a></button></center>
+	</div>
+	<br>
+	<br>
+  </body>
+</html>  
+
+ 
