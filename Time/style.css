@@ -1,0 +1,29 @@
+.time{
+	text-align:center;
+	margin-top:150px;
+	margin-left:150px;
+	margin-right:150px;
+	margin-bottom:30px;
+	font-size:200px;
+	border:dotted;
+	border-color:#dd2251;
+	color:#333333;
+	font-family:Times New Roman;
+}
+.dark-mode{
+	background-color:#08373d;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .time {
+        font-size: 120px; /* Reduce font size for smaller screens */
+        margin: 50px auto; /* Center the element horizontally */
+    }
+    
+    
+}
